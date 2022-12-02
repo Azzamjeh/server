@@ -22,7 +22,7 @@
         </ul>
     </nav>
 
-    <p id="home">Hello,<br> I'm Azzzam and i'm IT Student </p>
+    <p id="home">Hello,<br> I'm Azzam and i'm IT Student </p>
 
     <h2>About</h2>
     <p>IT student at fatoni university and a future programmer, engineer and a developer</p>
@@ -36,19 +36,24 @@
     <form id="form">
 
          <label for="name">Name:</label><br>
-         <input placeholder="Enter your name" type="text" id="name" name="name" required
-            pattern="[A-Za-z]{2,}" title="Input your real name"><br>
+         <input placeholder="first name and last name" type="text" id="name" name="name" required
+            title="Input your real name" pattern="[A-Za-z]{2,}.[A-Za-z]{2,}"><br>
+
          <label for="phoneNumber">Phone Number:</label><br>
-         <input placeholder="Your phone number" type="number" id="PhoneNumber" name="phoneNumber" required
-            pattern="[0-9]+"maxlength="10"><br>
+         <input placeholder="Your phone number" type="tel" id="PhoneNumber" name="phoneNumber" required 
+         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12"> <span>format: xxx-xxx-xxxx</span><br>
+
          <label for="Email">Email:</label><br>
          <input placeholder="your Email" type="email" id="Email" name="Email" required 
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
-         <label for="subject">subject:</label ><br>
-         <input placeholder="Subject" type="text" id="subject" name="Subject" required><br>
+            
+         <label for="subject">message:</label><br>
+         <textarea required placeholder="write your message"
+          name="Message" id="message" cols="20" rows="5"></textarea><br>
+
          <input type="submit" value="Submit"><br>
     </form>
-
+   
 
 
 </body>
