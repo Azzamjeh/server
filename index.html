@@ -9,6 +9,23 @@
     <meta name="author" content="Azzam">
     <title>Me</title>
 
+    <style>
+        .name-label{
+            
+        }     
+        .submit-button{
+            background-color: rgb(15, 19, 154);
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            height: 23px;
+            width: 68px;
+            cursor: pointer;       
+         }
+
+    </style>
+
 </head>
 
 <body>
@@ -28,14 +45,14 @@
     <p>IT student at fatoni university and a future programmer, engineer and a developer</p>
 
     <h2 id="About">Contant</h2>
-    <p>Address<br>
+    <p><b>Address</b><br>
     Thailand,Yala</p>
-    <p>Email<br>
+    <p><b>Email</b><br>
     Azzamjeh@gmail.com</p>
 <!--placeholder for hint-->
     <form id="form">
 
-         <label for="name">Name:</label><br>
+         <label class="name-label" for="name">Name:</label><br>
          <input placeholder="first name and last name" type="text" id="name" name="name" required
             title="Input your real name" pattern="[A-Za-z]{2,}.[A-Za-z]{2,}"><br>
 
@@ -51,7 +68,7 @@
          <textarea required placeholder="write your message"
           name="Message" id="message" cols="20" rows="5"></textarea><br>
 
-         <input type="submit" value="Submit"><br>
+         <input class="submit-button" type="submit" value="Submit"><br>
     </form>
    
 
