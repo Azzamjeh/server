@@ -8,6 +8,9 @@
     <meta name="keywords" content="Information technology, Education, programming">
     <meta name="author" content="Azzam">
     <title>Me</title>
+    
+
+    
 
     <style>
         .name-label{
@@ -23,6 +26,18 @@
             width: 68px;
             cursor: pointer;       
          }
+         code{
+            background-color: rgb(171, 162, 220);
+            color:rgb(170, 31, 31);
+            font-size: 110%;
+            border: none;
+            border-radius: 2px;
+            display: block;
+            width: 360px;
+            padding-left: 5px;
+
+
+         }
 
     </style>
 
@@ -32,24 +47,24 @@
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#form">Contant</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contant</a></li>
+            <li><a href="#form">form</a></li>
            
         </ul>
     </nav>
 
     <p id="home">Hello,<br> I'm Azzam and i'm IT Student </p>
 
-    <h2>About</h2>
-    <p>IT student at fatoni university and a future programmer, engineer and a developer</p>
+    <h2 id="about">About</h2>
+    <p>IT student at fatoni university and<code> A future programmer, engineer and a developer</code></p>
 
-    <h2 id="About">Contant</h2>
+    <h2 id="contact">Contant</h2>
     <p><b>Address</b><br>
     Thailand,Yala</p>
     <p><b>Email</b><br>
     Azzamjeh@gmail.com</p>
-<!--placeholder for hint-->
+
     <form id="form">
 
          <label class="name-label" for="name">Name:</label><br>
@@ -67,10 +82,10 @@
          <label for="subject">message:</label><br>
          <textarea required placeholder="write your message"
           name="Message" id="message" cols="20" rows="5"></textarea><br>
+    </form> 
+            <input class="submit-button" type="submit" value="Submit">
+            <span><button class="submit-button">Home</button></span><br>
 
-         <input class="submit-button" type="submit" value="Submit"><br>
-    </form>
-   
 
 
 </body>
