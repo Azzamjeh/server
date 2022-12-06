@@ -7,65 +7,45 @@
     <meta name="description" content="contant">
     <meta name="keywords" content="Information technology, Education, programming">
     <meta name="author" content="Azzam">
-    <title>Me</title>
+    <title>Only Azz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect"
+         href="https://fonts.gstatic.com" crossorigin><link 
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image-icon" href="/images/az.ico">
     
 
-    
-
-    <style>
-        .name-label{
-            
-        }     
-        .submit-button{
-            background-color: rgb(15, 19, 154);
-            color: white;
-            font-weight: bold;
-            border: none;
-            border-radius: 8px;
-            height: 23px;
-            width: 68px;
-            cursor: pointer;       
-         }
-         code{
-            background-color: rgb(171, 162, 220);
-            color:rgb(170, 31, 31);
-            font-size: 110%;
-            border: none;
-            border-radius: 2px;
-            display: block;
-            width: 360px;
-            padding-left: 5px;
-
-
-         }
-
-    </style>
 
 </head>
 
 <body>
+ <div class="nav-div">
     <nav>
+        <h2 class="logo">Only<span>Azz</span> </h2>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contant</a></li>
             <li><a href="#form">form</a></li>
-           
         </ul>
+        
     </nav>
-
-    <p id="home">Hello,<br> I'm Azzam and i'm IT Student </p>
-
+ </div>
+    <p id="home">Hello<br> I&apos;m Azzam and i&apos;m IT Student </p>
+<hr>
     <h2 id="about">About</h2>
     <p>IT student at fatoni university and<code> A future programmer, engineer and a developer</code></p>
+    <hr>
 
     <h2 id="contact">Contant</h2>
     <p><b>Address</b><br>
     Thailand,Yala</p>
     <p><b>Email</b><br>
     Azzamjeh@gmail.com</p>
+    <hr>
+    <h2 id="form">form</h2>
 
-    <form id="form">
+    <form>
 
          <label class="name-label" for="name">Name:</label><br>
          <input placeholder="first name and last name" type="text" id="name" name="name" required
@@ -73,18 +53,34 @@
 
          <label for="phoneNumber">Phone Number:</label><br>
          <input placeholder="Your phone number" type="tel" id="PhoneNumber" name="phoneNumber" required 
-         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12"> <span>format: xxx-xxx-xxxx</span><br>
+         pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10"><br>
 
          <label for="Email">Email:</label><br>
          <input placeholder="your Email" type="email" id="Email" name="Email" required 
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+            pattern="[a-z0-9._%+-]+@(gmail|icloud|hotmail)\.[A-Za-z]{2,}"
+             title="only gmail, icoud or hotmail "><br>
             
          <label for="subject">message:</label><br>
          <textarea required placeholder="write your message"
-          name="Message" id="message" cols="20" rows="5"></textarea><br>
-    </form> 
-            <input class="submit-button" type="submit" value="Submit">
-            <span><button class="submit-button">Home</button></span><br>
+           name="Message" id="message" cols="20" rows="5"></textarea><br>
+
+           <label for="myfile">Select a file:</label>
+           <input type="file" id="myfile" name="myfile" 
+           accept="image/*, .pdf"><br>
+
+          <input class="submit-button" type="submit" value="Submit">
+    
+        </form>
+        
+
+
+        <hr>
+        <footer>
+           <center> 
+            &copy;copyright <a class="link" href="https://github.com/Azzamjeh/server"
+            target="_blank">only Azz</a>
+            </center>
+        </footer>
 
 
 
