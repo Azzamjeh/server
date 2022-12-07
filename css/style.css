@@ -27,7 +27,6 @@ nav{
 .logo{
     color: rgb(255, 38, 0);
     font-size: 30px;
-    margin-bottom: 15px;
 }
 span{
     color: rgb(11, 23, 97);
@@ -39,6 +38,7 @@ nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 10px 20px;
+
     
 
 }
@@ -54,6 +54,27 @@ nav ul li a:hover{
     transition: .3s;
 
 }
+
+.contact-button{
+    color: white;
+    background-color: rgb(248, 73, 42);
+    border: none;
+    border-radius: 30px;
+    padding:12px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+
+.contact-button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+ 
+    
+}
+
+
 .name-label{
             
 }     
