@@ -13,12 +13,11 @@
          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image-icon" href="/images/az.ico">
+
     
-
-
 </head>
 
-<body>
+<body >
  <div class="nav-div">
     <nav>
         <h2 class="logo">Only<span>Azz</span> </h2>
@@ -32,29 +31,35 @@
         
     </nav>
  </div>
-    <p id="home">Hello<br> I&apos;m Azzam and i&apos;m IT Student </p><br>
-<hr>
-    <h2 id="about">About</h2>
-    <p>IT student at fatoni university and A future programmer, engineer and a developer<br>
+ <div>
+        <p id="home">Hello<br> I&apos;m Azzam and i&apos;m IT Student </p><br>
+        <hr>
+        <h2 id="about">About</h2>
+        <p>IT student at fatoni university and A future programmer, engineer and a developer<br>
         skills - education - experience
-    </p><br>
-   
-    <hr>
-    <h2 id="contact">Contact</h2>
-    <p><b>Address</b><br>
+     </p><br>
+    </div>
+     <hr>
+
+    <div>
+     <h2 id="contact">Contact</h2>
+     <p><b>Address</b><br>
         unknown</p>
         <p><b>Email</b><br>
         unknown@gmail.com</p><br>
+    </div>
 
-    <form>
+    <div class="div-form">
 
-         <label class="name-label" for="name">Name:</label><br>
+        <form>
+
+         <label for="name">Name:</label><br>
          <input placeholder="first name and last name" type="text" id="name" name="name" required
             title="Input your real name" pattern="[A-Za-z]{2,}.[A-Za-z]{2,}"><br>
 
          <label for="phoneNumber">Phone Number:</label><br>
          <input placeholder="Your phone number" type="tel" id="PhoneNumber" name="phoneNumber" required 
-         pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10"><br>
+         pattern="[0-9]{10}" maxlength="10"><br>
 
          <label for="Email">Email:</label><br>
          <input placeholder="your Email" type="email" id="Email" name="Email" required 
@@ -65,25 +70,18 @@
          <textarea required placeholder="write your message"
            name="Message" id="message" cols="20" rows="5"></textarea><br>
 
-           <label for="myfile">Select a file:</label>
-           <input type="file" id="myfile" name="myfile" 
-           accept="image/*, .pdf"><br>
-
           <input class="submit-button" type="submit" value="Submit">
     
         </form>
-        
-
-
+    </div>
         <hr>
+
         <footer>
            <center> 
             &copy;copyright <a class="link" href="https://github.com/Azzamjeh/server"
             target="_blank">only Azz</a>
             </center>
         </footer>
-
-
 
 </body>
 </html>

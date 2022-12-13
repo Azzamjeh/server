@@ -2,24 +2,98 @@
 <html>
 <head>
     <style>
-        code{
-            background-color: blueviolet;
-            color: white;
-            padding:2px;
-            font-size: 14px;
-            font-family: 'Times New Roman', Times, serif;
-            border-radius: 2px;
+        body{
+            background-color: #191724;
+            display: grid;
+            color: #b3b3b3;
+            height: 50vh;
+            font-family:monospace;
+            
+
+            
         }
+        .input-container{
+    width: 200px;
+    position: relative;
+  }
+    .label{
+        position: absolute;
+        left: 10px;
+        top: 14px;
+        transition: all 0.2s;
+        padding: 0 2 px;
+        z-index: 1;
+        color: #b3b3b3;
+    }
+    .text-input{
+        padding: 0.8rem;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #382f26;
+        background: #272530;
+        border-radius: 5px;
+        font-size: 18px;
+        outline: none;
+        transition: all.3s;
+        color: #fff;
+    }
+    .label::before{
+        content: "";
+        height: 5px;
+        background-color: #272530;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 100%;
+        z-index: -1;
+    }
+    .text-input:focus{
+        border: 2px solid #fd7f0a;
+    }
+    .text-input:focus+.label,
+    .filled{
+        top: -10px;
+        color: #fd7f0a;
+        font-size: 16px;
+    }
+    .text-input::placeholder{
+        font-size: 16px;
+        opacity: 0;
+        transition: all .3s;
+    }
+    .text-input:focus::placeholder{
+        opacity: 1;
+        animation-delay: 0.3s;
+    }
+
+  
+
     </style>
     
 
     </head>
     <body>
         <p>
-            Nowadays it's all about technology.
-         We need to <code>study Technology </code>because we need to gain a deeper understanding of our society and our environment.
-        Which included artificial technology and machine learning.
+            Nowadays it's all about <samp>technology.</samp>
+         We need to study Technology because we need to gain a deeper understanding of our society and our environment.
+        Which included artificial technology and machine <kbd>learning.</kbd>
         </p>
+        <hr><br>
+        <details>
+            <summary>
+               new stuff
+            </summary> haha nothing here:)
+        </details><br>
+
+        <form>
+            <div class="input-container">
+                <input type="text" id="username"
+                autocomplete="off" placeholder="Enter your username"
+                required class="text-input">
+                <label for="username"
+                   class="label">username</label>
+            </div>
+        </form>
 
 
     </body>
