@@ -1,7 +1,13 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
 body{
     background-color: #2a273c;
     background-size: cover;
     color: white;
+    width:100%;
+    
 }
 .nav-div{
     height: 170px;
@@ -83,6 +89,11 @@ nav ul li a:hover{
     cursor: pointer;     
     margin-top: 6px;
     font-family: 'Montserrat', sans-serif;
+    transition: .2s;
+ }
+ .submit-button:hover{
+    cursor: pointer;
+    background-color: #7c798b;
  }
  
  p,h2,form{
@@ -115,6 +126,30 @@ nav ul li a:hover{
 p, h2{
     text-align: center;
 }
+.home-container{
+    font-size: 50px;
+    margin-bottom: 10rem;
+    background-color: lightblue;
+    word-break: break-all;
+    border: 2px solid black;
+    width: 100%;
+}
+.about-container{
+    background-color: lightpink;
+    margin-bottom: 20rem;
+    border: 2px solid black;
+    width: 100%;
+
+}
+
+.contact-container{
+    background-color: lightgreen;
+    margin-bottom:5rem;
+    border: 2px solid black;
+    width: 100%;
+
+}
+
 
 
 
