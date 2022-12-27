@@ -6,7 +6,8 @@ body{
     background-color: #2a273c;
     background-size: cover;
     color: white;
-    width:100%;
+    max-width:100%;
+    overflow-x: hidden;
     
 }
 .nav-div{
@@ -21,10 +22,11 @@ nav{
     justify-content: space-between;
     padding-top:5px;
     padding-left: 5%;
-    padding-right: 10%;
+    padding-right: 30%;
     border-radius: 2px;
     background-color: aliceblue;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 .logo{
     color: rgb(255, 38, 0);
@@ -56,27 +58,6 @@ nav ul li a:hover{
     transition: .3s;
 
 }
-
-.contact-button{
-    color: white;
-    background-color: rgb(248, 73, 42);
-    border: none;
-    border-radius: 30px;
-    padding:12px 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    transition: .4s;
-    display: flex;
-}
-
-.contact-button:hover{
-    transform: scale(1.2);
-    cursor: pointer;
- 
-    
-}
-
      
 .submit-button{
     background-color: rgb(248, 73, 42);    color: black;
@@ -108,7 +89,7 @@ nav ul li a:hover{
     border-radius: 5px;
     background-color: #272530;
     padding: 20px;
-    border: none;
+    border: 50px;
     width:50%;
 
  }
@@ -128,11 +109,13 @@ p, h2{
 }
 .home-container{
     font-size: 50px;
-    margin-bottom: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 20rem;
     background-color: lightblue;
     word-break: break-all;
     border: 2px solid black;
     width: 100%;
+;
 }
 .about-container{
     background-color: lightpink;
@@ -142,13 +125,6 @@ p, h2{
 
 }
 
-.contact-container{
-    background-color: lightgreen;
-    margin-bottom:5rem;
-    border: 2px solid black;
-    width: 100%;
-
-}
 
 
 
