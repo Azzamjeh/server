@@ -13,6 +13,8 @@
          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image-icon" href="/images/az.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     
 </head>
@@ -20,7 +22,9 @@
 <body >
  <div class="nav-div">
     <nav>
-        <h2 class="logo">Only<span>Azz</span> </h2>
+        <h2 class="logo">Only<span style=" color: rgb(11, 23, 97);
+            margin-left:3px ;
+            font-size: 140%;">Azz</span> </h2>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -41,48 +45,47 @@
             <h2 id="about">About</h2>
                 <p>IT student at fatoni university and A future programmer, engineer and a developer<br>
                 skills - education - experience</p><br>
+                
          </div>
     
    
 
 
 
-    <div class="div-form">
-
-        <div class="contact-container">
-        <h2 id="contact">Contact</h2>
-        <p><b>Address</b><br>
-            unknown</p>
-            <p><b>Email</b><br>
-            unknown@gmail.com</p><br>
-        </div>
-        <form>
-
-         <label for="name">Name:</label><br>
-         <input placeholder="first name and last name" type="text" id="name" name="name" required
-           autocomplete="off"  title="Input your real name" pattern="[A-Za-z]{2,}.[A-Za-z]{2,}"><br>
-
-         <label for="phoneNumber">Phone Number:</label><br>
-         <input placeholder="Your phone number" type="tel" id="PhoneNumber" name="phoneNumber" required 
-         pattern="[0-9]{10}" maxlength="10"><br>
-
-         <label for="Email">Email:</label><br>
-         <input placeholder="your Email" type="email" id="Email" name="Email" required 
-            pattern="[a-z0-9._%+-]+@(gmail|icloud|hotmail)\.[A-Za-z]{2,}"
-             title="only gmail, icoud or hotmail "><br>
-            
-         <label for="subject">message:</label><br>
-         <textarea required placeholder="write your message"
-           name="Message" id="message" cols="20" rows="5"></textarea><br>
-
-          <input class="submit-button" type="submit" value="Submit">
+         <section class="contact" id="contact">
+            <h1 class="heading">
+                <span>Contact</span>
+            </h1>
     
-        </form>
-    </div>
-    <a href="#home"></a> 
+            <div class="row">
+                <div class="content">
+                    <h3 class="title">Contact Info</h3>
+                    <div class="info">
+                        <h3><i class="fa fa-envelope"></i>Azzamjeh@gmail.com</h3>
+                        <h3><i class="fa fa-phone"></i>+66 1463 3302</h3>
+                        <h3><i class="fa fa-map-marker"></i>Yala, Thai</h3>
+                    </div>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Name" class="box"
+                     title="Enter your real name" pattern="[A-Za-z]{2,}.[A-Za-z]{2,}" required>
+                    <input type="email" placeholder="Email" class="box"
+                     pattern="[a-z0-9._%+-]+@(gmail|icloud|hotmail)\.[A-Za-z]{2,}"
+                     title="only gmail, icoud or hotmail " required>
+                    <input type="tel" placeholder="phone" class="box"
+                     title="Your phone number" pattern="[0-9]{10}" maxlength="10" required >
+                    <textarea name="" id="" cols="30" rows="10" class="box message"placeholder="message"
+                    title="Should be 10 words at least"  required></textarea>
+                    <button type="submit" class="btn">
+                        <i class="fa fa-paper-plane"></i>
+                    </button>
+                    <a href="#home"></a> 
+                </form>
+            </div>
+        </section>
+    
 
         <hr>
-
         <footer>
            <center> 
             &copy;copyright <a class="link" href="https://github.com/Azzamjeh/server"
