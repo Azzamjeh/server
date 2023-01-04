@@ -83,11 +83,9 @@ p, h2{
     font-size: 50px;
     margin-top: 10rem;
     margin-bottom: 20rem;
-    background-color: lightblue;
     word-break: break-all;
-    border: 2px solid black;
     width: 100%;
-;
+
 }
 .about-container{
     background-color: lightpink;
